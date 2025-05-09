@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachana Vannala's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+
+</head>
+<body>
+<nav id="desktop-nav">
+    <div class="logo">Rachana Vannala</div>
+    <div>
+        <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+               <li><a href="#experience">Experience</a></li> 
+               <li><a href="#projects">Projects</a></li> 
+                <li><a href="#publications">Publications</a></li> 
+                <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+</nav>
+    <nav id="hamburger-nav">
+<div class="logo">Rachana Vannala</div>
+<div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+    <span> </span>
+    <span> </span>
+    <span> </span>
+
+</div>
+<div class="menu-links">
+    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> 
+    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> 
+     <li><a href="#publications" onclick="toggleMenu()">Publications</a></li> 
+     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+</div>
+</div>
+    </nav>
+<section id="profile">
+    <div class="section_pic-container">
+    <img src="./assets/profile.jpeg" alt="profile picture" style="width: 450px; height: 450px; border-radius: 50%;">
+    </div>
+    <div class="section_text">
+
+    <p class="section_text_p1">Hello, I'm </p>
+    <h1 class="title">Rachana Vannala</h1>
+    <p class="section_text_p2">Full-Stack Developer</p>
+    <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Rachana_Vannala_Resume.pdf')">
+           Download CV </button>
+           <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info </button>
+           
+
+    </div>
+    <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/rachanavannala/'">
+
+        <img src="./assets/github.png" alt="Github profile" class="icon" onclick="location.href='https://github.com/Vannala-Rachana'">
+
+    </div>
+    </div>
+</section>
+<section id="about">
+    
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section_pic-container">
+            <img src="./assets/profile.jpg" alt="profile picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+                    <h3>Experience</h3>
+                    <p>2+ Years <br> Full Stack Development</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="education icon" class="icon"/>
+                    <h3>Education</h3>
+                    <p>M.Sc. Master's Degree <br> Information Technology</p>
+
+                </div>
+            </div>
+            <div class="text-container">
+                <p>Full Stack Developer with a Master’s in Information Technology from the University of Cincinnati. I have a strong technical background from hands-on experience and have contributed to impactful projects and real-world solutions.
+
+With expertise in HTML, CSS, JavaScript, React, Angular, and Node.js, I have enhanced system efficiency and user experience at every role, achieving outcomes like a 25% reduction in page load times and a 30% boost in response times. 
+
+Notable projects include an AI-powered FAQ chatbot that improved response time and satisfaction, and an e-test platform with secure protocols that reduced unauthorized access by 70%.
+
+In parallel, I’ve built a solid foundation in data science, machine learning, and AI, reflected in published research such as a Graphical Authentication System (IJRITCC) and recognition as a finalist in national tech events like Smart India Hackathon and UIDAI Aadhar Hackathon.</p>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+</section>
+<section id="experience">
+   
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+<div class="about-containers">
+    <div class="details-container">
+        <h2 class="experience-sub-title">Frontend Development</h2>
+        <div class="article-container">
+            <article>
+                <img src="./assets//check.png" alt="Experience icon" class="icon"/>
+                <div> <h3>HTML</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="./assets//check.png" alt="Experience icon" class="icon"/>
+                <div> <h3>CSS</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="./assets//check.png" alt="Experience icon" class="icon"/>
+                <div> <h3>JavaScript</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="./assets//check.png" alt="Experience icon" class="icon"/>
+                <div> <h3>TypeScript</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+            <article>
+                <img src="./assets//check.png" alt="Experience icon" class="icon"/>
+                <div> <h3>React JS</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+            <article>
+                <img src="./assets//check.png" alt="Experience icon" class="icon"/>
+                <div> <h3>Material UI</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+            
+        </div>
+    </div>
+    <div class="details-container">
+        <h2 class="experience-sub-title">Backend Development</h2>
+        <div class="article-container">
+            <article>
+                <img src="./assets//check.png" alt="Experience icon" class="icon"/>
+                <div> <h3>PHP</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="./assets//check.png" alt="Experience icon" class="icon"/>
+                <div> <h3>MYSQL</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="./assets//check.png" alt="Experience icon" class="icon"/>
+                <div> <h3>PostgreSQL</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="./assets//check.png" alt="Experience icon" class="icon"/>
+                <div> <h3>MongoDB</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="./assets//check.png" alt="Experience icon" class="icon"/>
+                <div> <h3>Node JS</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="./assets//check.png" alt="Experience icon" class="icon"/>
+                <div> <h3>Express JS</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+
+            
+            
+        </div>
+    </div>
+</div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+</section>
+
+<section id="projects">
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+  
+        <!-- Flip Card Start -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- Front -->
+            <div class="flip-card-front">
+              <img src="./assets/project-1.png" alt="Locker Management System" class="project-img" />
+              <h4 class="experience-sub-title project-title">Locker Management System</h4>
+            </div>
+            <!-- Back -->
+            <div class="flip-card-back">
+              <p>Designed a secure locker booking and tracking system for educational institutions, supporting user role-based access and real-time updates.</p>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vannala-Rachana?tab=repositories'">Github</button>
+            </div>
+          </div>
+        </div>
+        <!-- Flip Card End -->
+  
+        <!-- Repeat for other projects -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/project 2.webp" alt="AI-Powered FAQ System" class="project-img" />
+              <h6 class="experience-sub-title project-title">AI-Powered Web App for FAQ’s</h6>
+            </div>
+            <div class="flip-card-back">
+              <p>Implemented an AI chatbot handling 150+ FAQs with text/image input, reducing response time and customer issues by 40%, and improving satisfaction through real-time intelligent answers.</p>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vannala-Rachana?tab=repositories'">Github</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/oes.png" alt="E-test Platform" class="project-img" />
+              <h4 class="experience-sub-title project-title">E-test Platform</h4>
+            </div>
+            <div class="flip-card-back">
+              <p>Created a robust online examination system used by 2,000+ test takers, enhancing user navigation and reducing unauthorized access by 70% through secure authentication protocols.</p>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vannala-Rachana?tab=repositories'">Github</button>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+ 
+  
+   <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#publications'"/>
+
+</section>
+
+     
+    
+      
+      <section id="publications">
+        <h1 class="title">Publications</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+      
+              <div class="publication-entry">
+                <h3>
+                  <img src="./assets/IEEE.jpg" alt="IEEE Logo" class="bullet-icon" />
+                  Graphical Authentication System using Image Panels
+                  <button class="btn btn-color-2 project-btn">View Publication</button>
+                </h3>
+              </div>
+      
+              <div class="publication-entry">
+                <h3>
+                  <img src="./assets/ijritcc.png" alt="IJRITCC Logo" class="bullet-icon" />
+                  AI Chatbot for Answering FAQ’s
+                  <button class="btn btn-color-2 project-btn">View Publication</button>
+                </h3>
+              </div>
+      
+              <div class="publication-entry">
+                <h3>
+                  <img src="./assets/positif.jpeg" alt="POSITIF Logo" class="bullet-icon" />
+                  Comparative Analysis of Data Decryption Techniques
+                  
+                  <button class="btn btn-color-2 project-btn">View Publication</button>
+                </h3>
+              </div>
+      
+              <div class="publication-entry">
+                <h3>
+                  <img src="./assets/positif.jpeg" alt="POSITIF Logo" class="bullet-icon" />
+                  AI in Predicting Heart Disease from Databases
+                  <button class="btn btn-color-2 project-btn">View Publication</button>
+                </h3>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+        <h1 class="title">Achievements</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+      
+              <div class="publication-entry">
+                <h3>
+                  <img src="./assets/sih.jpg" alt="IEEE Logo" class="bullet-icon" />
+                  Smart India Hackathon
+                  
+                  <button class="btn btn-color-2 project-btn">Know More</button>
+                </h3>
+              </div>
+      
+              <div class="publication-entry">
+                <h3>
+                  <img src="./assets/aadhaar.png" alt="IJRITCC Logo" class="bullet-icon" />
+                  UIDAI Aadhar Hackathon
+                  <button class="btn btn-color-2 project-btn">Know More</button>
+                </h3>
+              </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+</section>
+<section id="contact">
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png"alt="email icon"class="icon contact-icon"/>
+            <p> <a href="mailto:rachanavannala@gmail.com">rachanavannala@gmail.com</a></p>
+        </div>
+  
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png"alt="linkedin icon"class="icon contact-icon"/>
+            <p> <a href="https://www.linkedin.com/in/rachanavannala/">Linkedin</a></p>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+               <li><a href="#experience">Experience</a></li> 
+               <li><a href="#projects">Projects</a></li> 
+                <li><a href="#publications">Publications</a></li> 
+                <li><a href="#contact">Contact</a></li>
+    </ul>
+
+        </div>
+    </nav>
+    <p>Copyright &#169; 2025 Rachana Vannala</p>
+</footer>
+    <script src="script.js">
+    </script>
+</body>
+</html>
