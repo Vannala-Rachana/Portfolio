@@ -10,17 +10,18 @@ window.addEventListener('scroll', () => {
 
 // Smooth reveal on scroll using Intersection Observer
 const observerOptions = {
-    threshold: 0.1
+    threshold: 0.15
 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('reveal');
+            entry.target.classList.add('active');
         }
     });
 }, observerOptions);
 
 document.querySelectorAll('section').forEach(section => {
+    section.classList.add('reveal');
     observer.observe(section);
 });
