@@ -130,7 +130,7 @@ section {
 /* Small screens (mobile) */
 @media (max-width: 600px) {
   #profile {
-    height: 60vh;
+    height: 80vh;
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.85),
