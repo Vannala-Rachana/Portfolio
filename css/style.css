@@ -81,7 +81,7 @@ nav.scrolled {
 /* Sections */
 section {
   padding: 1rem 1% 1rem;
-  min-height: 60vh;
+  min-height: 55vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,7 +130,7 @@ section {
 /* Small screens (mobile) */
 @media (max-width: 600px) {
   #profile {
-    height: 60vh;
+    height: 80vh;
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.85),
@@ -181,11 +181,11 @@ section {
 @media (max-width: 600px) {
   .hero-content p {
     padding-top: 3rem;
-    margin-top: 11rem; /* increase this value to move it further down */
+    margin-top: 19.5rem; /* increase this value to move it further down */
   }
   .hero-content h1 {
     padding-top: 2.5rem;
-    margin-top: -1rem;
+
     margin-left: -170px;
     color: #e50914;
   }
@@ -231,7 +231,7 @@ section {
 }
 
 /* Cards & Containers */
-.details-containers {
+.detail-containers {
   background: #181818;
   padding: 2.5rem;
   border-radius: 4px;
@@ -239,10 +239,20 @@ section {
   border-left: 5px solid var(--netflix-red);
   transition: transform 0.3s;
   font-family: "Roboto Condensed", sans-serif;
+  display: block;
 }
 
-.details-containers:hover {
+.detail-containers:hover {
   transform: scale(1.02);
+}
+.detail-containers p {
+  display: block; /* force each <p> to be its own line */
+  margin: 0.25rem 0;
+}
+
+.detail-containers a {
+  text-decoration: none; /* optional: cleaner link look */
+  color: inherit;
 }
 
 .experience-sub-title {
@@ -265,6 +275,9 @@ section {
   padding: 2rem;
   border-radius: 4px;
   border-left: 5px solid var(--netflix-red);
+}
+.skill-category:hover {
+  transform: scale(1.05);
 }
 
 .skill-category h3 {
@@ -426,4 +439,127 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+.detail-containers {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.profiles-row {
+  display: flex;
+  gap: 2.5rem; /* more space between profiles */
+  justify-content: flex-start; /* start from the left */
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* avatar + text centered within each profile */
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.profile-avatar {
+  width: 140px; /* bigger avatar */
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #141414;
+  margin-bottom: 0.75rem;
+}
+
+.profile:hover {
+  transform: scale(1.07);
+}
+
+.profile:hover .profile-avatar {
+  border-color: #ffffff;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.profile-role,
+.profile-dates {
+  font-size: 0.85rem;
+  margin: 0.15rem 0;
+  opacity: 0.85;
+}
+.profiles-row {
+  display: flex;
+  gap: 2.5rem; /* more space between profiles */
+  justify-content: flex-start; /* start from the left */
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* avatar + text centered within each profile */
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.profile-avatar {
+  width: 140px; /* bigger avatar */
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #141414;
+  margin-bottom: 0.75rem;
+}
+
+.profile:hover {
+  transform: scale(1.07);
+}
+
+.profile:hover .profile-avatar {
+  border-color: #ffffff;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.profile-role,
+.profile-dates {
+  font-size: 0.85rem;
+  margin: 0.15rem 0;
+  opacity: 0.85;
+}
+#contact .detail-containers {
+  display: block !important;
+}
+
+#contact .detail-containers p {
+  display: block !important; /* force each <p> to be a full line */
+  width: 100%;
+  margin: 0.25rem 0;
+  white-space: normal; /* allow wrapping instead of staying on one line */
+}
+@media (max-width: 768px) {
+  .profiles-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; /* space between cards */
+  }
+}
+#experience .profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0.75rem auto 0.5rem;
 }
