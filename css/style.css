@@ -81,7 +81,7 @@ nav.scrolled {
 /* Sections */
 section {
   padding: 1rem 1% 1rem;
-  min-height: 55vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,7 +130,7 @@ section {
 /* Small screens (mobile) */
 @media (max-width: 600px) {
   #profile {
-    height: 80vh;
+    height: 60vh;
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.85),
