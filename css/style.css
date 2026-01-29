@@ -143,9 +143,7 @@ section {
     text-align: center;
     align-items: center;
   }
-  #profile {
-    background-attachment: fixed;
-  }
+
   #profile h1 {
     font-size: 2rem;
   }
