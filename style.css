@@ -165,6 +165,7 @@ section {
 
   margin-bottom: 0.5rem;
   line-height: 1;
+
   font-family: "Bebas Neue";
 }
 
@@ -180,12 +181,12 @@ section {
 @media (max-width: 600px) {
   .hero-content p {
     padding-top: 3rem;
-    margin-top: 11.25rem; /* increase this value to move it further down */
+    margin-top: 11rem; /* increase this value to move it further down */
   }
   .hero-content h1 {
     padding-top: 2.5rem;
     margin-top: -1rem;
-    margin-left: -220px;
+    margin-left: -200px;
     color: #e50914;
   }
 }
@@ -263,6 +264,7 @@ section {
   background: #181818;
   padding: 2rem;
   border-radius: 4px;
+  border-left: 5px solid var(--netflix-red);
 }
 
 .skill-category h3 {
