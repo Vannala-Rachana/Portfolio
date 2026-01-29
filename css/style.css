@@ -103,7 +103,7 @@ section {
       rgba(0, 0, 0, 0.9) 20%,
       rgba(0, 0, 0, 0.1)
     ),
-    url("./assets/profile.png");
+    url("/assets/profile.png");
   background-size: cover; /* scales image to cover container */
   background-position: center center; /* keeps it centered */
   background-repeat: no-repeat;
@@ -136,7 +136,7 @@ section {
         rgba(0, 0, 0, 0.85),
         rgba(0, 0, 0, 0.1)
       ),
-      url("./assets/profile.jpeg");
+      url("/assets/profile.jpeg");
     background-size: cover;
     background-position: center 30%; /* move image so focus stays visible */
     padding: 0 3%;
