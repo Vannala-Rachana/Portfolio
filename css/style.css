@@ -561,3 +561,9 @@ footer {
   display: block;
   margin: 0.75rem auto 0.5rem;
 }
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 2s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
